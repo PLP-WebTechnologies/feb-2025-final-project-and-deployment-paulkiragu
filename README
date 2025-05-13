@@ -1,0 +1,39 @@
+# E-commerce Website
+live link:https://shimmering-kataifi-6e177c.netlify.app/
+
+## 📌 Project Title
+BuySmart
+
+## 📝 Description
+This is a simple, responsive e-commerce website built using HTML, CSS, and JavaScript. The site features product listings such as shoes, categories like New Arrivals and Products, and provides a modern user interface suitable for small and large business.
+
+The project emphasizes:
+- Online shopping experience
+- Responsive layout for both desktop and mobile devices
+- Product grid display
+- Category navigation
+- Clean and accessible UI design
+ ### folder structure
+/Buysmart
+├──assets
+   ├── images
+├── about.css
+├── about.html
+├── contact.css
+├── contact.html
+├── index.css
+├── index.html
+├── product.html
+└── README.md
+
+
+## 🚀 How to Run / Setup the Project
+
+### live link:  
+https://shimmering-kataifi-6e177c.netlify.app/
+
+### Author:
+-Paul mburu
+
+
+

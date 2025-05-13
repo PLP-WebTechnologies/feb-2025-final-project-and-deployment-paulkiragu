@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us</title>
+  <link rel="stylesheet" href="about.css" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <header>
+   <nav class="navigation">
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <h2 class="logo">Buysmart</h2>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="contact.html">Contacts</a></li>
+  </ul>
+
+  <div class="cart" id="cart-icon">
+    <img src="assets/cart.png" alt="Cart"/>
+    <span id="cart-count">0</span>
+  </div>
+</nav>
+
+<!--mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <h2>Buysmart</h2>
+  <ul class="mobile-nav-links shared-links"></ul>
+</div>
+
+<div class="overlay" id="overlay"></div>
+
+  </header>
+
+  <main class="about-section">
+    <h2>About Us</h2>
+    <div class="about-content">
+      <img src="assets/about.jpg" alt="About Buysmart" />
+      <div class="about-text">
+        <h2>Welcome to Buysmart</h2>
+        <p>
+          Buysmart is your trusted destination for stylish watches, fine perfumes, and elegant necklaces. 
+          We are committed to offering premium quality products at affordable prices, helping you express your personality through every purchase.
+        </p>
+        <p>
+          Our mission is to make shopping effortless, enjoyable, and accessible. 
+          Whether you're treating yourself or buying a gift, we aim to provide a smooth and reliable experience from click to delivery.
+        </p>
+        <p>
+          Thank you for choosing Buysmart. Let’s make smart choices together.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Buysmart. All rights reserved.</p>
+  </footer>
+
+  <div id="cart-modal" class="cart-modal">
+    <h3>Your Cart</h3>
+    <ul id="cart-items"></ul>
+    <p id="total-price">Total: ksh 0</p>
+    <button id="complete-order">Complete Order</button>
+    <button id="close-cart">Close</button>
+</div>
+
+</body>
+<script src="index.js"></script>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>products</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+  <nav class="navigation">
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <h2 class="logo">Buysmart</h2>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html" class="active">Products</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contacts</a></li>
+    </ul>
+
+    <div class="cart" id="cart-icon">
+      <img src="assets/cart.png" alt="Cart"/>
+      <span id="cart-count">0</span>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu  -->
+  <div class="mobile-menu" id="mobileMenu">
+    <h2>Buysmart</h2>
+    <ul class="mobile-nav-links shared-links"></ul>
+  </div>
+
+<div class="overlay" id="overlay"></div>
+
+  </header>
+
+  <main>
+    <section class="section-1">
+      <h3>Watches</h3>
+      <div class="products">
+        <div class="products-content">
+          <div>
+            <img src="assets/watch1.jpg" alt="watch 1">
+            <p>Elegant wristwatch with a clean gray dial...</p>
+            <p class="price">ksh 1500</p>
+            <button class="btn" data-name="old-school watch" data-price="1500" data-image="assets/watch1.jpg">Add to cart</button>
+          </div>
+          <div>
+            <img src="assets/watch2.jpg" alt="watch 2">
+            <p>Stylish analog watch featuring a deep blue strap...</p>
+            <p class="price">ksh 1100</p>
+            <button class="btn" data-name="ocean breeze watch" data-price="1100" data-image="assets/watch2.jpg">Add to cart</button>
+          </div>
+          <div>
+            <img src="assets/watch3.jpg" alt="watch 3">
+            <p>Classic analog watch with a minimalist gray dial...</p>
+            <p class="price">ksh 800</p>
+            <button class="btn" data-name="brown straps watch" data-price="800" data-image="assets/watch3.jpg">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-2">
+      <h3>Perfumes</h3>
+      <div class="arrivals">
+        <div class="arrival-content">
+          <div>
+            <img src="assets/perfume1.jpg" alt="perfume 1">
+            <p>Luxurious perfume in a sleek black and gold bottle...</p>
+            <p class="price">ksh 3000</p>
+            <button class="btn" data-name="Golden Allure perfume" data-price="3000" data-image="assets/perfume1.jpg">Add to cart</button>
+          </div>
+          <div>
+            <img src="assets/perfume2.jpg" alt="perfume 2">
+            <p>Bold and vibrant perfume housed in a striking blue bottle...</p>
+            <p class="price">ksh 1000</p>
+            <button class="btn" data-name="Scarlet Temptation perfume" data-price="1000" data-image="assets/perfume2.jpg">Add to cart</button>
+          </div>
+          <div>
+            <img src="assets/perfume3.jpg" alt="perfume 3">
+            <p>Refined and masculine fragrance in a sleek, dark blue bottle...</p>
+            <p class="price">ksh 5000</p>
+            <button class="btn" data-name="Blue Horizon perfume" data-price="5000" data-image="assets/perfume3.jpg">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-3">
+      <h3>Necklaces</h3>
+      <div class="products">
+        <div class="products-content">
+          <div>
+            <img src="assets/neklace1.jpg" alt="Necklace 1">
+            <p>Charming silver chain necklace with a vibrant blue gemstone...</p>
+            <p class="price">ksh 4000</p>
+            <button class="btn" data-name="Azure Spark necklace" data-price="4000" data-image="assets/neklace1.jpg">Add to cart</button>
+          </div>
+          <div>
+            <img src="assets/necklace2.jpg" alt="Necklace 2">
+            <p>Elegant necklace with a subtle golden accent...</p>
+            <p class="price">ksh 700</p>
+            <button class="btn" data-name="Golden Aura necklace" data-price="700" data-image="assets/necklace2.jpg">Add to cart</button>
+          </div>
+          <div>
+            <img src="assets/necklace3.jpg" alt="Necklace 3">
+            <p>Elegant silver Tree of Life pendant...</p>
+            <p class="price">ksh 900</p>
+            <button class="btn" data-name="Silver necklaces necklace" data-price="900" data-image="assets/necklace3.jpg">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="cart-modal" class="cart-modal">
+    <h3>Your Cart</h3>
+    <ul id="cart-items"></ul>
+    <p id="total-price">Total: ksh 0</p>
+    <button id="complete-order">Complete Order</button>
+    <button id="close-cart">Close</button>
+</div>
+
+  <script src="index.js"></script>
+</body>
+</html>

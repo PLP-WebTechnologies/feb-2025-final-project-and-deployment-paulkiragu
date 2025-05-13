@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Watches & Perfumes</title>
+  <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+<!--navigation menu-->
+  <nav class="navigation">
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <h2 class="logo">Buysmart</h2>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contacts</a></li>
+    </ul>
+
+    <div class="cart" id="cart-icon">
+      <img src="assets/cart.png" alt="Cart"/>
+      <span id="cart-count">0</span>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu  -->
+  <div class="mobile-menu" id="mobileMenu">
+    <h2>Buysmart</h2>
+    <ul class="mobile-nav-links shared-links"></ul>
+  </div>
+
+  <div class="overlay" id="overlay"></div>
+
+<section class="hero-section">
+  <div class="slider">
+    <img src="assets/nike.jpg" class="slide active" alt="Slide 1">
+    <img src="assets/watch1.jpg" class="slide" alt="Slide 2">
+    <img src="assets/perfume2.jpg" class="slide" alt="Slide 3">
+    <p class="slider-text">Welcome to Buysmart – Explore Quality Shoes, Watches & Perfumes</p>
+  </div>
+</section>
+
+  <main>
+    <!-- New Arrivals -->
+    <section class="section-1">
+      <h3>New Arrivals</h3>
+      <div class="arrivals">
+        <div class="arrival-content">
+          
+          <div>
+            <img src="assets/Airforce.jpg" alt="Airforce Shoes"/>
+            <p>Designed for versatility, these sneakers feature sleek responsive cushioning...</p>
+            <p class="price">ksh 3000</p>
+            <button class="btn" data-name="Airforce Shoes" data-price="3000" data-image="assets/Airforce.jpg">Add to cart</button>
+          </div>
+
+          <div>
+            <img src="assets/vans.jpg" alt="Vans Shoes"/>
+            <p>Lightweight and versatile, these shoes feature a simple lace-up design...</p>
+            <p class="price">ksh 1300</p>
+            <button class="btn" data-name="Vans Shoes" data-price="1300" data-image="assets/vans.jpg">Add to cart</button>
+          </div>
+
+          <div>
+            <img src="assets/shoe3.jpg" alt="Girls Sneakers"/>
+            <p>Air unit in the heel for maximum cushioning and bold vibrant styling...</p>
+            <p class="price">ksh 2000</p>
+            <button class="btn" data-name="Girls Sneakers" data-price="2000" data-image="assets/shoe3.jpg">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Similar Products -->
+    <section class="section-2">
+      <h3>Similar Products</h3>
+      <div class="products">
+        <div class="products-content">
+          <div>
+            <img src="assets/formal1.jpg" alt="Official Shoe"/>
+            <p>Designed for formal occasions and professional settings.</p>
+            <p class="price">ksh 3500</p>
+            <button class="btn" data-name="Official Shoe" data-price="3500" data-image="assets/formal1.jpg">Add to cart</button>
+          </div>
+          <div>
+            <img src="assets/air2.jpg" alt="Air Force 1"/>
+            <p>Iconic style and comfort of the Air Force 1...</p>
+            <p class="price">ksh 3800</p>
+            <button class="btn" data-name="Air Force 1" data-price="3800" data-image="assets/air2.jpg">Add to cart</button>
+          </div>
+          <div>
+            <img src="assets/product3.jpg" alt="Sport Shoe"/>
+            <p>Engineered for performance and comfort with a lightweight design.</p>
+            <p class="price">ksh 1500</p>
+            <button class="btn" data-name="Sport Shoe" data-price="1500" data-image="assets/product3.jpg">Add to cart</button>
+          </div>
+          <div>
+            <img src="assets/product4.jpg" alt="Colorful Shoe"/>
+            <p>Vibrant and bold – perfect for a standout style.</p>
+            <p class="price">ksh 1800</p>
+            <button class="btn" data-name="Colorful Shoe" data-price="1800" data-image="assets/product4.jpg">Add to cart</button>
+          </div>
+          <div>
+            <img src="assets/product5.jpg" alt="Women's Heels"/>
+            <p>Elegant heels crafted with chic styling for formal occasions.</p>
+            <p class="price">ksh 2800</p>
+            <button class="btn" data-name="Women's Heels" data-price="2800" data-image="assets/product5.jpg">Add to cart</button>
+          </div>
+          <div>
+            <img src="assets/product6.jpg" alt="Converse"/>
+            <p>Timeless Converse sneakers in iconic high-top and low-top styles.</p>
+            <p class="price">ksh 1000</p>
+            <button class="btn" data-name="Converse" data-price="1000" data-image="assets/product6.jpg">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+      <h3>Your Cart</h3>
+      <div class="cart-items-container">
+        <ul id="cart-items"></ul>
+      </div>
+      <p id="total-price">Total: ksh 0</p>
+      <button id="complete-order">Complete Order</button>
+      <button id="close-cart">Close</button>
+    </div>
+<!-- Explore to more categories button -->
+    <div id="categories">
+      <a href="products.html"><button>More Categories</button></a>
+    </div>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
